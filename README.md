@@ -392,6 +392,8 @@ Nico is responsible for:
 - Recording or organising the 3-minute video
 - Preparing the final ZIP submission
 - Checking the contribution form
+- 8 user stories with quoc
+- 24 acceptance criteria with quoc
 
 ### An — Driver Section
 

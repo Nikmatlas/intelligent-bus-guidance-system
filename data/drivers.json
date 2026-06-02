@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "driverID": "23@@5678AB",
+    "name": "John",
+    "experienceYears": 5,
+    "licenseType": "Heavy",
+    "address": "12|Street|City|State|Country",
+    "birthdate": "01-01-2000"
+  }
+]

@@ -6,6 +6,12 @@ package com.ibdgs.model;
  */
 
 public class Driver {
+
+    public static final String LICENSE_LIGHT = "Light";
+    public static final String LICENSE_MEDIUM = "Medium";
+    public static final String LICENSE_HEAVY = "Heavy";
+    public static final String LICENSE_PUBLIC_TRANSPORT = "PublicTransport";
+
     private String driverID;
     private String name;
     private int experienceYears;

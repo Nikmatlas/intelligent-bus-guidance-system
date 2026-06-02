@@ -7,6 +7,11 @@ package com.ibdgs.model;
  */
 
 public class Bus {
+
+    public static final String FUEL_DIESEL = "Diesel";
+    public static final String FUEL_HYBRID = "Hybrid";
+    public static final String FUEL_ELECTRICITY = "Electricity";
+
     private String busID;
     private int capacity;
     private double fuelLevel;

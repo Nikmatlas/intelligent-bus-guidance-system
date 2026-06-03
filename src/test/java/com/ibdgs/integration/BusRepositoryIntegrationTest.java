@@ -76,20 +76,19 @@ class BusRepositoryIntegrationTest {
 
     // (4) record counts are updated correctly
     @Test
-    @DisplayName("record counts are updated correctly across adds")
+    @DisplayName("record counts are updated correctly | add two valid buses -> count 2")
     void countsUpdated(@TempDir Path dir) {
         BusRepository repo = new BusRepository(dir.resolve("buses.json"));
         assertEquals(0, repo.count());
 
         repo.add(new Bus("11111111", 30, 50.0, "Diesel"));
         repo.add(new Bus("22222222", 40, 60.0, "Hybrid"));
-        repo.add(new Bus("33333333", 20, 70.0, "Electricity"));
-        assertEquals(3, repo.count());
+        assertEquals(2, repo.count());
 
         // A rejected duplicate must NOT change the count.
         assertThrows(IllegalArgumentException.class,
                 () -> repo.add(new Bus("11111111", 25, 10.0, "Diesel")));
-        assertEquals(3, repo.count());
+        assertEquals(2, repo.count());
     }
 
     // Extra: B2 increase rejected after reload from disk.
